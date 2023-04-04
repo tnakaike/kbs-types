@@ -23,7 +23,7 @@ pub use tee::snp::{Error as SnpDecodeError, SnpAttestation};
 #[serde(rename_all = "lowercase")]
 pub enum Tee {
     AzSnpVtpm,
-    AzTdxVtpm,
+    // AzTdxVtpm,
     Sev,
     Sgx,
     Snp,
@@ -32,6 +32,7 @@ pub enum Tee {
     Cca,
     // China Secure Virtualization
     Csv,
+    Hpcr,
 
     // This value is only used for testing an attestation server, and should not
     // be used in an actual attestation scenario.
