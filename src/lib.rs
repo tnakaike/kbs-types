@@ -70,6 +70,8 @@ pub struct Attestation {
     pub tee_pubkey: TeePubKey,
     #[serde(rename = "tee-evidence")]
     pub tee_evidence: String,
+    #[serde(rename = "expiration-time")]
+    pub expiration_time: String,
 }
 
 #[derive(Clone, Serialize, Deserialize, Debug)]
